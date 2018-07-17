@@ -25,8 +25,7 @@ export class EditService extends BehaviorSubject<any> {
         tap(data => {
           this.data = data;
           console.log(data);
-        }
-        ))
+        }))
       .subscribe(data => {
         super.next(data);
       });
